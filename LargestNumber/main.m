@@ -19,11 +19,17 @@ int main(int argc, const char * argv[]) {
         NSArray *listTwo = @[@0, @4, @1, @100, @29, @-100, @1000];
         NSArray *listThree = @[@100, @4, @1, @100, @2900, @-100, @1000];
         
-        ArrayUtility *largestNum = [[ArrayUtility alloc] init];
-        NSLog(@"%@", [largestNum largestNumber:listOne]);
+        ArrayUtility *num = [[ArrayUtility alloc] init];
+        NSLog(@"%@", [num largestNumber:listOne]);
+        NSLog(@"%@", [num smallestNumber:listTwo]);
+        NSLog(@"%@", [num medianNumber:listTwo]);
         
         ArrayUtility *arrLarge = [[ArrayUtility alloc] init];
         NSLog(@"%@", [arrLarge largestNumber:listThree]);
+        NSLog(@"%@", [arrLarge smallestNumber:listThree]);
+        NSLog(@"%@", [arrLarge medianNumber:listThree]);
+        
+       
         
     }
     return 0;

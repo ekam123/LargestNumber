@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ArrayUtility : NSObject
 
 -(NSNumber *)largestNumber: (NSArray *) arr;
+-(NSNumber *)smallestNumber: (NSArray *) arr;
+-(NSNumber *)medianNumber: (NSArray *) arr; 
 
 @end
 
