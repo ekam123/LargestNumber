@@ -15,10 +15,16 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
     
-        NSArray *numList = @[@4200, @4, @1, @100, @29, @-100, @1000];
+        NSArray *listOne = @[@4200, @4, @1, @100, @29, @-100, @1000];
+        NSArray *listTwo = @[@0, @4, @1, @100, @29, @-100, @1000];
+        NSArray *listThree = @[@100, @4, @1, @100, @2900, @-100, @1000];
+        
         ArrayUtility *largestNum = [[ArrayUtility alloc] init];
-        NSNumber *value = [largestNum largestNumber:numList];
-        NSLog(@"%@", value);
+        NSLog(@"%@", [largestNum largestNumber:listOne]);
+        
+        ArrayUtility *arrLarge = [[ArrayUtility alloc] init];
+        NSLog(@"%@", [arrLarge largestNumber:listThree]);
+        
     }
     return 0;
 }
